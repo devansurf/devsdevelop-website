@@ -1,9 +1,9 @@
-import aboutMeImg from "../images/aboutme.jpeg";
+import aboutMeImg from "../images/dsurf.png";
 import { motion } from "framer-motion";
 import SocialIcons from "../components/SocialIcons";
 import { useInView } from "react-intersection-observer";
 import { useState, useEffect } from "react";
-import resume from "../pages/about/michael-yeates-resume.pdf";
+import resume from "../pages/about/Devan's-Resume.pdf";
 
 const AboutMe = ({ name, email, location, availability, brand }) => {
   const [ref, inView] = useInView({
@@ -21,7 +21,7 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
     setDownloading(true);
     const link = document.createElement("a");
     link.href = resume;
-    link.download = "Michael-Yeates-Resume.pdf";
+    link.download = "Devan-Vazquez-Resume.pdf";
     link.onload = () => {
       link.remove();
       setDownloading(false);
@@ -50,8 +50,9 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
           transition={{ duration: 0.4, ease: "easeInOut" }}
         >
           <div className="contentContainer">
-            <h4>Nice to meet you</h4>
-            <h5>Frontend Web Developer who creates amazing digital experiences!</h5>
+            <h5>I'm studying to become a Software engineer at the University of Puerto Rico at
+              Mayaguez. My hobbies include surfing, drawing, and programming. My passion is to do all my hobbies at once, 
+              hence the creation of Pocket Surf</h5>
             <div className="contentDescription">
               <p>{brand}</p>
             </div>
@@ -59,23 +60,13 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
               <div className="row">
                 <div className="col-12 col-md-6 info">
                   <span>Name:</span>
-                  <p>Michael Yeates</p>
+                  <p>Devan Vazquez</p>
                 </div>
                 <div className="col-12 col-md-6 info">
                   <span>Email:</span>
                   <p>
                     <a href={`mailto:${email}`}>{email}</a>
                   </p>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-12 col-md-6 info">
-                  <span>Location:</span>
-                  <p>{location}</p>
-                </div>
-                <div className="col-12 col-md-6 info">
-                  <span>Availability:</span>
-                  <p>{availability}</p>
                 </div>
               </div>
             </div>

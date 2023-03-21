@@ -19,14 +19,14 @@ const NavLinks = () => {
         <NavLink to="/" onClick={() => setIsMenuOpen(false)}>
           Home
         </NavLink>
+        <NavLink to="/resume" onClick={() => setIsMenuOpen(false)}>
+          Resume
+        </NavLink>
         <NavLink to="/about" onClick={() => setIsMenuOpen(false)}>
           About
         </NavLink>
-        <NavLink to="/portfolio" onClick={() => setIsMenuOpen(false)}>
-          Portfolio
-        </NavLink>
-        <NavLink to="/contact" onClick={() => setIsMenuOpen(false)}>
-          Contact
+        <NavLink to="/privacy" onClick={() => setIsMenuOpen(false)}>
+          Privacy Policy
         </NavLink>
       </nav>
     </>

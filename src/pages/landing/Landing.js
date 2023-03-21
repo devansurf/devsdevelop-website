@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import landingImage from "../../images/me.svg";
+//import landingImage from "../../images/me.svg";
 import SocialIcons from "../../components/SocialIcons";
 
 const Landing = ({ name, tagline }) => {
@@ -12,13 +12,13 @@ const Landing = ({ name, tagline }) => {
       alignItems: "center",
     },
 
-    landingImage: {
-      position: "absolute",
-      bottom: "0",
-      opacity: "0.3",
-      mixBlendMode: "lighten",
-      height: "80%",
-    },
+    // landingImage: {
+    //   position: "absolute",
+    //   bottom: "0",
+    //   opacity: "0.3",
+    //   mixBlendMode: "lighten",
+    //   height: "80%",
+    // },
 
     textContainer: {
       display: "flex",
@@ -66,7 +66,7 @@ const Landing = ({ name, tagline }) => {
           {tagline}
         </motion.p>
       </div>
-      <div className="image-container">
+      {/* <div className="image-container">
         <motion.img
           className="landingImage"
           ref={ref}
@@ -77,7 +77,7 @@ const Landing = ({ name, tagline }) => {
           src={landingImage}
           alt=""
         />
-      </div>
+      </div> */}
 
       <SocialIcons />
     </section>

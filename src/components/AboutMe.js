@@ -50,9 +50,8 @@ const AboutMe = ({ name, email, location, availability, brand }) => {
           transition={{ duration: 0.4, ease: "easeInOut" }}
         >
           <div className="contentContainer">
-            <h5>I'm studying to become a Software engineer at the University of Puerto Rico at
-              Mayaguez. My hobbies include surfing, drawing, and programming. My passion is to do all my hobbies at once, 
-              hence the creation of Pocket Surf</h5>
+            <h5>Majoring in Computer Science and Engineer at the University of Puerto Rico at
+              Mayagüez. My hobbies include surfing, digital drawing, and programming. Pocket Surf is the amalgamation of these interests.</h5>
             <div className="contentDescription">
               <p>{brand}</p>
             </div>

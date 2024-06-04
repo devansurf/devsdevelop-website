@@ -3,6 +3,7 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Landing from "../pages/landing/Landing";
 import About from "../pages/about/About";
 import Privacy from "../pages/privacy/Privacy";
+import AppVersion from "./AppVersion";
 // import Portfolio from "../pages/portfolio/Portfolio";
 // import Contact from "../pages/contact/Contact";
 
@@ -31,6 +32,7 @@ const AnimatedRoutes = ({ personalDetails }) => {
           <Contact name={personalDetails.name} location={personalDetails.location} email={personalDetails.email} />
         }
       /> */}
+      <Route path = "/appVersion" element={<AppVersion/>} />
     </Routes>
   );
 };

@@ -2,7 +2,7 @@ import AboutMe from "../../components/AboutMe";
 import PageHeader from "../../components/PageHeader";
 
 const About = ({ name, location, brand, email, availability }) => {
-  const appVersion = "2.1.0"; 
+  const appVersion = "2.1.1"; 
   return (
     <section className="about">
       <PageHeader title="About Me" description="Let me introduce myself" />

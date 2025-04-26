@@ -12,7 +12,7 @@ const AppVersion  = () => {
 
     return (
         <div>
-            <h2>App Version: 2.1.0 {version}</h2>
+            <h2>App Version: 2.1.1 {version}</h2>
         </div>
     );
 };
